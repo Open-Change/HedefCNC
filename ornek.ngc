@@ -1,0 +1,55 @@
+G28        ; Home pozisyonuna dön (200, 193)
+M05        ; Kalemi kaldır
+
+; H harfi (Ölçeklenmiş ve Merkezlenmiş)
+G01 X105.3 Y213.9
+M03        ; Kalemi indir
+G01 X105.3 Y173.1
+G01 X105.3 Y193.5
+G01 X134.7 Y193.5
+G01 X134.7 Y213.9
+G01 X134.7 Y173.1
+
+
+M05        ; Kalemi kaldır
+
+; E harfi
+G01 X173.6 Y213.9
+M03        ; Kalemi indir
+G01 X145.2 Y213.9
+G01 X145.2 Y173.1
+G01 X173.6 Y173.1
+M05        ; Kalemi kaldır
+G01 X145.2 Y193.5
+M03        ; Kalemi indir
+G01 X173.6 Y193.5
+
+M05
+G00 X186.1 Y213.9 ; L harfi başlangıç
+M03
+
+; L harfi
+G01 X186.1 Y173.1
+G01 X213.9 Y173.1
+
+M05
+G00 X228.4 Y213.9 ; İkinci L
+M03
+
+; İkinci L
+G01 X228.4 Y173.1
+G01 X256.2 Y173.1
+
+M05
+G00 X270.6 Y193.5 ; O harfi başlangıç
+M03
+
+; O harfi (Optimize Edilmiş Daire)
+G01 X270.6 Y213.9
+G01 X297.7 Y213.9
+G01 X297.7 Y173.1
+G01 X270.6 Y173.1
+G01 X270.6 Y213.9
+
+M05
+G28        ; Home pozisyonuna dön
